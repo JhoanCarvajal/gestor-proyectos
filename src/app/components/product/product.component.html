@@ -1,7 +1,7 @@
 <!-- <img width="200" [src]="product.image" alt=""> -->
 
 <app-img [img]="product.image"></app-img>
-<h2>$ {{product.price}}</h2>
+<h2>$ {{product.price | currency:'COP ' }}</h2>
 <p>{{product.title}}</p>
 <button (click)="addToShoppingCart()">Add cart</button>
 
