@@ -1,5 +1,6 @@
 <div class="products--grid">
     {{shoppingCart.length}} - {{total}}
+    <button (click)="createProduct()">Crear producto</button>
     <app-product [product]="product" *ngFor="let product of products" (showProductDetail)="showProductDetail($event)"
         (addProduct)="addToShoppingCart($event)"></app-product>
     <div class="product-detail" [class.active]="isShowProductDetail">
